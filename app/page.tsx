@@ -19,17 +19,17 @@ export default function Home() {
             </Link>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/children-books" className="text-blue-600 border-b-2 border-blue-600 py-1">
-              Children Books
+            <nav className="hidden md:flex items-center space-x-6">
+            <Link href="/custom-book" className="text-gray-600 hover:text-blue-600 transition-colors">
+              Custom Book
             </Link>
-            <Link href="/pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Pricing & Shipping
+            <Link href="/testimony" className="text-gray-600 hover:text-blue-600 transition-colors">
+              Testimony
             </Link>
-            <Link href="/order-status" className="text-gray-600 hover:text-blue-600 transition-colors">
-              Order Status
+            <Link href="/previous-works" className="text-gray-600 hover:text-blue-600 transition-colors">
+              Previous Works
             </Link>
-          </nav>
+            </nav>
 
           <div className="flex items-center">
             <Link href="/cart" className="relative">
@@ -48,7 +48,7 @@ export default function Home() {
 
           <div className="relative mx-auto max-w-2xl mb-12">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/Image1.png?height=400&width=600"
               alt="Magical book illustration"
               width={600}
               height={400}
@@ -58,11 +58,13 @@ export default function Home() {
           </div>
 
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded text-lg font-medium h-auto">
+          <Link href="/create-book" className="text-blue-600 border-b-2 border-blue-600 py-1">
+            </Link>
             START CREATING
           </Button>
         </section>
 
-        <section className="container mx-auto py-12 px-4 max-w-md">
+        {/* <section className="container mx-auto py-12 px-4 max-w-md">
           <div className="text-center mb-6">
             <h2 className="text-xl font-semibold mb-2">Newsletter</h2>
             <p className="text-gray-600">Subscribe to our newsletter for exclusive news and deals.</p>
@@ -72,7 +74,7 @@ export default function Home() {
             <Input type="email" placeholder="Your email address" className="border-gray-300" />
             <Button className="bg-blue-600 hover:bg-blue-700 whitespace-nowrap">SUBSCRIBE</Button>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <footer className="border-t py-8">
