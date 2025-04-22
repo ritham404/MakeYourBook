@@ -57,9 +57,10 @@ export default function Home() {
           </div>
 
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 rounded text-lg font-medium h-auto">
-          <Link href="/create-book" className="text-blue-600 border-b-2 border-blue-600 py-1">
-            </Link>
+          <Link href="/create-book" className="relative">
+            
             START CREATING
+          </Link>
           </Button>
         </section>
 
