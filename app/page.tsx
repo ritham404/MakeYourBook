@@ -19,8 +19,8 @@ export default function Home() {
             </Link>
           </div>
 
-            <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/custom-book" className="text-gray-600 hover:text-blue-600 transition-colors">
+            <nav className="hidden md:flex items-center space-x-6 ml-auto">
+            <Link href="/create-book" className="relative">
               Custom Book
             </Link>
             <Link href="/testimony" className="text-gray-600 hover:text-blue-600 transition-colors">
@@ -32,10 +32,9 @@ export default function Home() {
             </nav>
 
           <div className="flex items-center">
-            <Link href="/cart" className="relative">
+            <Link href="/cart" className="relative ml-5">
               <ShoppingCart className="h-6 w-6" />
-              <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-xs text-white">
-                0
+              <span className="absolute -top-2 -right-4 flex h-5 w-5 justify-center rounded-full bg-blue-600 text-xs text-white">
               </span>
             </Link>
           </div>
@@ -75,6 +74,71 @@ export default function Home() {
             <Button className="bg-blue-600 hover:bg-blue-700 whitespace-nowrap">SUBSCRIBE</Button>
           </div>
         </section> */}
+        <section className="container mx-auto py-12 px-4">
+          <h2 className="text-2xl font-bold text-center mb-8">What Our Customers Say</h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
+            <div className="border p-6 rounded shadow">
+              <p className="text-gray-600 mb-4">
+          "This was such a magical experience for my child! The book was beautifully crafted and personalized."
+              </p>
+              <span className="block text-sm font-semibold text-gray-800">- Sarah L.</span>
+            </div>
+            <div className="border p-6 rounded shadow">
+              <p className="text-gray-600 mb-4">
+          "I loved how easy it was to create a custom story. My son can't stop reading it!"
+              </p>
+              <span className="block text-sm font-semibold text-gray-800">- Michael T.</span>
+            </div>
+            <div className="border p-6 rounded shadow">
+              <p className="text-gray-600 mb-4">
+          "The illustrations and story were perfect. This is a keepsake we'll treasure forever."
+              </p>
+              <span className="block text-sm font-semibold text-gray-800">- Emily R.</span>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-bold text-center mb-8">Our Previous Works</h2>
+          <div className="overflow-x-auto">
+            <div className="flex gap-4">
+              <div className="min-w-[300px]">
+          <Image
+            src="/book1.png"
+            alt="Previous Work 1"
+            width={300}
+            height={400}
+            className="rounded shadow"
+          />
+              </div>
+              <div className="min-w-[300px]">
+          <Image
+            src="/book2.png"
+            alt="Previous Work 2"
+            width={300}
+            height={400}
+            className="rounded shadow"
+          />
+              </div>
+              <div className="min-w-[300px]">
+          <Image
+            src="/book3.png"
+            alt="Previous Work 3"
+            width={300}
+            height={400}
+            className="rounded shadow"
+          />
+              </div>
+              <div className="min-w-[300px]">
+          <Image
+            src="/book4.png"
+            alt="Previous Work 4"
+            width={300}
+            height={400}
+            className="rounded shadow"
+          />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="border-t py-8">
