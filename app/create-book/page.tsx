@@ -1,4 +1,5 @@
 // pages/upload-photos.tsx
+"use client";
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { UploadCloud } from "lucide-react";
@@ -19,6 +20,11 @@ const UploadPhotos: React.FC = () => {
       URL.createObjectURL(file)
     );
     setPreviews((prev) => [...prev, ...newPreviews]);
+
+    // Revoke object URLs to avoid memory leaks
+    return () => {
+      newPreviews.forEach((preview) => URL.revokeObjectURL(preview));
+    };
   };
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
