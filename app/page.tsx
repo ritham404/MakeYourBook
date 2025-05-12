@@ -20,15 +20,18 @@ export default function Home() {
           </div>
 
             <nav className="hidden md:flex items-center space-x-6 ml-auto">
-            <Link href="/create-book" className="relative">
+              <Link href="/create-book" className="relative">
               Custom Book
-            </Link>
-            <Link href="/testimony" className="text-gray-600 hover:text-blue-600 transition-colors">
+              </Link>
+              <a
+              href="#testimony"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+              >
               Testimony
-            </Link>
-            <Link href="/previous-works" className="text-gray-600 hover:text-blue-600 transition-colors">
+              </a>
+              <Link href="/previous-works" className="text-gray-600 hover:text-blue-600 transition-colors">
               Previous Works
-            </Link>
+              </Link>
             </nav>
 
           <div className="flex items-center">
@@ -75,7 +78,7 @@ export default function Home() {
             <Button className="bg-blue-600 hover:bg-blue-700 whitespace-nowrap">SUBSCRIBE</Button>
           </div>
         </section> */}
-        <section className="container mx-auto py-12 px-4">
+        <section id="testimony" className="container mx-auto py-12 px-4 scroll-smooth">
           <h2 className="text-2xl font-bold text-center mb-8">What Our Customers Say</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
             <div className="border p-6 rounded shadow">
